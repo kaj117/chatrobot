@@ -12,8 +12,8 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from chatrobot.plugins.sql.users_sql import add_me_in_db, his_userid
-from chatrobot.plugins.sql.checkuser_sql import add_usersid_in_db, already_added, get_all_users
+from robot.plugins.sql.users_sql import add_me_in_db, his_userid
+from robot.plugins.sql.checkuser_sql import add_usersid_in_db, already_added, get_all_users
 from telethon import custom, events, Button
 import re
 from telethon.tl.functions.users import GetFullUserRequest
@@ -63,8 +63,8 @@ async def help(event):
         await event.edit(
             "You Can Deploy Your Own ChatBot By Watching Video Down There. \nThank You For Contacting Me.",
             buttons=[
-                [Button.url("Deploy Tutorial 📺", "t.me/Infotel14")],
-                [Button.url("Need Help ❓", "t.me/SerenaAssistantBot")],
+                [Button.url("Deploy Tutorial 📺", "https://www.cyberwordk.tk")],
+                [Button.url("Need Help ❓", "t.me/cyberwordk")],
             ],
         )
         
