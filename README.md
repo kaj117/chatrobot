@@ -5,11 +5,11 @@
 
 
 # Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kaj117/kmacchatbot/blob/main)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kaj117/chatrobotblob/main)
 
 # Normal Way
 ```python3
-git clone https://github.com/kaj117/kmacchatbot/
+git clone https://github.com/kaj117/chatrobot
 cd ChatBot
 pip install -r requirements.txt
 # Make A file Named local_config and put all your values There and Then Run the bot.
