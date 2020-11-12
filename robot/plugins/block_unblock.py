@@ -1,6 +1,6 @@
 
-from chatrobot.plugins.sql.blacklist_sql import add_nibba_in_db, get_all_nibba, is_he_added, removenibba
-from chatrobot.plugins.sql.users_sql import add_me_in_db, his_userid
+from robot.plugins.sql.blacklist_sql import add_nibba_in_db, get_all_nibba, is_he_added, removenibba
+from robot.plugins.sql.users_sql import add_me_in_db, his_userid
 
 @chatbot_cmd("block", is_args=False)
 @god_only
