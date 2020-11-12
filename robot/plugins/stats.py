@@ -12,7 +12,7 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from chatrobot.plugins.sql.checkuser_sql import get_all_users
+from robot.plugins.sql.checkuser_sql import get_all_users
 
 @chatbot_cmd("stats", is_args=False)
 @god_only
@@ -27,4 +27,4 @@ async def stark(event):
 
 @chatbot_cmd("repo", is_args=False)
 async def stark(event):
-    await event.reply("<b><u>My Repo is Here :</b></u> <code>https://github.com/StarkGang/ChatBot</code>", parse_mode="HTML")
+    await event.reply("<b><u>My Repo is Here :</b></u> <code>https://github.com/kaj117/chatrobot/</code>", parse_mode="HTML")
