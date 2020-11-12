@@ -11,8 +11,8 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from chatrobot.plugins.sql.users_sql import add_me_in_db, his_userid
-from chatrobot.plugins.sql.blacklist_sql import is_he_added
+from robot.plugins.sql.users_sql import add_me_in_db, his_userid
+from robot.plugins.sql.blacklist_sql import is_he_added
 from telethon import custom, events, Button
 from telethon.tl.types import (
     Channel,
