@@ -6,8 +6,8 @@ import re
 from pathlib import Path
 import functools
 from telethon import events
-from chatrobot import chatbot
-from chatrobot import Config
+from robot import chatbot
+from robot import Config
 import glob
 bothandler = Config.COMMAND_HAND_LER
 def chatbot_cmd(add_cmd, is_args=False):
@@ -44,8 +44,8 @@ def start_chatbot(shortname):
         import sys
         from pathlib import Path
         import chatrobot.utils
-        path = Path(f"chatrobot/plugins/{shortname}.py")
-        name = "chatrobot.plugins.{}".format(shortname)
+        path = Path(f"robot/plugins/{shortname}.py")
+        name = "robot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -56,8 +56,8 @@ def start_chatbot(shortname):
         import sys
         from pathlib import Path
         import chatrobot.utils
-        path = Path(f"chatrobot/plugins/{shortname}.py")
-        name = "chatrobot.plugins.{}".format(shortname)
+        path = Path(f"robot/plugins/{shortname}.py")
+        name = "robot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.chatbot_cmd = chatbot_cmd
@@ -65,5 +65,5 @@ def start_chatbot(shortname):
         mod.Config = Config
         mod.god_only = god_only()
         spec.loader.exec_module(mod)
-        sys.modules["chatrobot.plugins" + shortname] = mod
+        sys.modules["robot.plugins" + shortname] = mod
         print("ChatBot Has imported " + shortname)
