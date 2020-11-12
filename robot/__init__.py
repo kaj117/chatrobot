@@ -19,7 +19,7 @@ import telethon.utils
 from telethon import TelegramClient
 ENV = os.environ.get("ENV", False)
 if ENV:
-    from chatrobot.BotConfig import Config
+    from robot.BotConfig import Config
 else:
     from local_config import Development as Config
 chatbot = TelegramClient("thechatbot", api_id=Config.API_ID, api_hash=Config.API_HASH)
