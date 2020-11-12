@@ -1,12 +1,12 @@
 from sys import argv
-from chatrobot import Config
-from chatrobot import chatbot
-from chatrobot import logging
+from robot import Config
+from robot import chatbot
+from robot import logging
 from pathlib import Path
 from sys import argv
 import telethon.utils
 from telethon import TelegramClient
-from chatrobot.utils import chatbot_cmd, start_chatbot
+from robot.utils import chatbot_cmd, start_chatbot
 import glob
 
 
@@ -16,7 +16,7 @@ if len(argv) not in (1, 3, 4):
 else:
     chatbot.start(bot_token=Config.BOT_TOKEN)
     
-path = "chatrobot/plugins/*.py"
+path = "robot/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
