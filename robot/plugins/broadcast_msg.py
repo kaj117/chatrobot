@@ -1,6 +1,6 @@
 
 
-from chatrobot.plugins.sql.checkuser_sql import get_all_users
+from robot.plugins.sql.checkuser_sql import get_all_users
 
 @chatbot_cmd("broadcast", is_args=True)
 @god_only
